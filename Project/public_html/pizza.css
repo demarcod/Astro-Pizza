@@ -1,0 +1,415 @@
+:root {
+	box-sizing: border-box;
+	background-color: #FFF;
+	color: #000;
+}
+
+*, ::before, ::after { box-sizing: inherit; }
+
+html{
+	background-image: url("pics/space.jpg");
+	background-size: 100%;
+	color: white;
+}
+
+.no-background {
+	position: absolute;
+
+}
+.left{
+	display:flex;
+	align-items: flex-start;
+	max-width:100%;
+}
+.left img{
+	flex:1;
+	margin: 15px;
+	margin-top: 0;
+}
+.left login{
+	flex: 1;
+}
+
+h1 {
+	display:flex;
+	justify-content: center;
+	font-size: 3em;
+	color: white;
+}
+nav {
+	color: #FFF;
+	background-color: black; /* red to set it apart */
+	border-radius: 0.5em;
+	padding: 0.25ex 1em 0.25ex 1em;
+}
+nav > ul {
+	display: flex;
+	padding-left: 0;
+	list-style-type: none;
+}
+nav > ul > li + li {
+	margin-top: 0;
+	margin-left: 1ex;
+}
+nav > ul > .nav-right {
+	margin-left: auto;
+}
+nav > ul > li > a {
+	display: block;
+	padding: 0.5em 1em;
+	color: #FFF;
+	background-color: darkred;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.login {
+	display: flex;
+	max-width: 20%;
+	flex-direction: column;
+	background-color: darkred;
+	border-radius: 0.5em;
+	margin-left: auto;
+	
+}
+.login h1 {
+	flex: 1;
+	margin-top: 0;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.login input:not([type=checkbox]):not([type=radio]) {
+	width:90%;
+	margin-left: 1%;
+	margin-top: 0;
+}
+.login button {
+	margin: 1em;
+	border: 3px solid #00C;
+	border-radius: 0.5em;
+	color: #FFF;
+	background-color: red;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.login button:hover,
+.login button:focus {
+  background-color: #FFF;
+  color: #00C;
+}
+
+.login input {
+	border-color: red;
+}
+.login label {
+	color: white;
+	font-weight: bold;
+}
+
+
+.signup {
+	display: flex;
+	max-width: 80%;
+	flex-direction: column;
+	background-color: darkred;
+	border-radius: 0.5em;
+	margin: auto;
+	justify-content: center;
+	
+}
+.signup h1 {
+	flex: 1;
+	margin-top: 0;
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+.signup input:not([type=checkbox]):not([type=radio]) {
+	margin-left: 1%;
+	margin-top: 0;
+}
+.signup button {
+	margin-top: 1em;
+	border: 3px solid #00C;
+	border-radius: 0.5em;
+	color: #FFF;
+	background-color: red;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	cursor: pointer;
+	width: 15%;
+}
+.signup button:hover,
+.signup button:focus {
+  background-color: #FFF;
+  color: #00C;
+  
+}
+.signup p {
+	display:flex;
+	margin: auto;
+}
+.signup input {
+	flex: 1;
+	margin-bottom: 1em;
+	border-color: red;
+	width: 250px;
+	
+}
+.signup label {
+	color: white;
+	font-weight: bold;
+}
+
+.locations {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.location-box {
+	flex: 1;
+	max-width: 250px;
+	justify-content: center;
+	background-color: darkred;
+	color: white;
+	margin: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	
+}
+
+.location-box button {
+	margin: 1em;
+	border: 3px solid #00C;
+	border-radius: 0.5em;
+	color: #FFF;
+	background-color: red;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.location-box button:hover,
+.location-box button:focus {
+  background-color: #FFF;
+  color: #00C;
+}
+
+.location-box img {
+	max-width: 200px;
+	margin: 0;
+}
+
+#container1 {
+	position: relative;
+}
+
+#container {
+	position: absolute;
+}
+
+footer {
+	display: flex;
+	color: white;
+	background-color: black;
+	border-radius: 0.5em;
+	padding: 0.25ex 1em 0.25ex 1em;
+	margin-top: 10px;
+}
+
+
+#pepperoni {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -175px;
+	bottom: -140px;
+}
+
+#tomatoes {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -175px;
+	bottom: -240px;
+}
+
+#peppers {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -175px;
+	bottom: -340px;
+}
+
+#olives {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -300px;
+	bottom: -140px;
+}
+
+#bacon {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -175px;
+	bottom: -440px;
+}
+
+#pineapple {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -300px;
+	bottom: -240px;
+}
+
+#ham {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -300px;
+	bottom: -340px;
+}
+
+#mushrooms {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -300px;
+	bottom: -440px;
+}
+
+#pizza {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -800px;
+}
+
+#transparent {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -800px;
+}
+
+#paper {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -1250px;
+}
+
+#mypizza {
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: Apple Chancery, cursive;
+
+	position: absolute;
+	right: -1075px;
+}
+
+#table1 {
+	margin: 0;
+	padding: 0;
+	font-family: Apple Chancery, cursive;
+	font-size: 18px;
+
+	position: absolute;
+	right: -1200px;
+	top: 75px;
+}
+
+#submitButton {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	right: -1075px;
+	bottom: -375px;
+}
+
+.open-button {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  width:30%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=question] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=question]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: darkgreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:5px;
+  margin-top:10px;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

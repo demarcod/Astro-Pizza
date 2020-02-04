@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Astro Pizza - Contact</title>
+		<link rel="stylesheet" type="text/css" href="pizza.css" />
+	</head>
+	
+	<body>
+		<header>
+			<h1>It's Out of This World!</h1>
+		</header>
+		<nav>
+			<ul class="navigation">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="buildpizza.html">Place an Order</a></li>
+			  <li><a href="contact.html">Contact Us</a></li>
+			  <li class="nav-right"><a href="signup.html">Sign Up</a></li>
+			</ul>
+		</nav>
+		
+		<div class="locations"> <!will convert this iterative segment to php calls>
+			<div class="location-box">
+			<img src="locations/asteroid.jpeg" alt="Asteroid">
+			Our Original Asteroid Location!<br>(Subject to change)
+			</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/saturn.jpeg" alt="Saturn">Saturn!</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/earth.jpg" alt="Earth">Earth!</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/mars.jpg" alt="Mars">Mars!</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/jupiter.jpg" alt="Jupiter">Jupiter!</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/sun.jpg" alt="Sun">*The Sun!<br> *Not liable for burnt pizza</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/moon.jpg" alt="moon">The Moon!<br>Pickup only, availability subject to cycle</img>
+			</div>
+			<div class="location-box">
+			<img src="locations/new-location.jpg" alt="New Location">New Locations Coming Soon!</img>
+			</div>
+		</div>
+		
+		<script src="contact.js" type="application/javascript"></script>
+		<button class="open-button" onclick="openForm()" id="popbutton" >Ask a Question</button>
+			<div class="form-popup" id="myForm">
+			<form class="form-container">
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+				<label for="que"><b>Question</b></label>
+				<input type="text" placeholder="Enter Question" name="que" id="question" required>
+
+				<button type="submit" class="btn" onclick = "ajaxfunction()">Send</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		
+		<footer>
+        <p>Legal | Terms | About us | More | etc.</p>
+		</footer>
+	</body>
+
+
+</html>
